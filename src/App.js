@@ -1,17 +1,19 @@
 
+import { useState } from 'react';
 import './App.css';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import Seu from './components/SeuNome';
+
 
 function App() {
+  const [nomeeeee, ttt]=useState()
   
     return (
     <div className="App"> 
-      <h1>Testando eventos</h1> 
-      <Evento numero="1"/>  
-      <Evento numero="2"/> 
-      <Form/> 
-      
+      <h1>State Lift</h1>
+      <Seu  algo={ttt}/>
+      {nomeeeee} 
+       
+            
     </div>
   );
 }
